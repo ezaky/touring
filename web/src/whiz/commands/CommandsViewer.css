@@ -1,0 +1,4 @@
+whiz-commands wa-button.icon-button::part(base) {
+    height: 0.9em;
+    padding: var(--wa-space-xs);
+}

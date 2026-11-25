@@ -1,0 +1,40 @@
+{
+  "name": "touring-server",
+  "version": "1.0.0",
+  "scripts": {
+    "build:ts": "tsc --build",
+    "copy:html": "copyfiles \"**/*.html\" \"../dist/server\" --exclude \"node_modules/**\"",
+    "build": "npm run build:ts && npm run copy:html"
+  },
+  "dependencies": {
+    "@google-cloud/discoveryengine": "2.6.0",
+    "@google-cloud/storage": "7.19.0",
+    "@google-cloud/scheduler":"6.0.0",
+    "@google-cloud/tasks":"7.0.0",
+    "body-parser": "2.2.2",
+    "compression": "1.8.1",
+    "cookie-parser": "1.4.7",
+    "express": "5.2.1",
+    "lodash-es": "4.18.1",
+    "lru-cache": "11.4.0",
+    "marked": "18.0.0",
+    "moment-timezone": "0.6.1",
+    "multer": "2.1.1",
+    "pg": "8.23.1",
+    "pg-format":"1.0.4",
+    "resend":"6.17.1",
+    "node": "25.8.1",
+    "pino": "10.3.1",
+    "pino-http": "11.0.0",
+    "pino-pretty": "13.1.3",
+    "md-to-adf": "0.6.4",
+    "argon2": "0.45.1",
+    "p-limit": "7.3.1",
+    "copyfiles":"2.4.1"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "25.5.0",
+    "@types/pg": "8.23.1"
+  }
+}

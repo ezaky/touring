@@ -1,0 +1,72 @@
+
+.main-page .page-content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.main-page [slot="header"] {
+    height: 68px;
+    padding: var(--wa-space-m) var(--wa-space-l) var(--wa-space-l);
+    margin-bottom: var(--wa-space-m);
+}
+.main-page main {
+    padding: var(--wa-space-l);
+}
+.main-page .main-header {
+    display: flex;
+    width: 100%;
+    height: 50px; /* so it remains fixed for the workspace page and the others */
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    box-shadow: 0 6px 6px -6px rgba(140, 130, 115, 0.1);
+}
+.main-page .main-header .header-title {
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.main-page .main-header .header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--wa-space-m)
+}
+.main-page .main-header .logo-container {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+}
+.main-page .main-header .logo-icon {
+    font-size: 1.6rem;
+    color: var(--wa-color-neutral-40);
+}
+.main-page .main-header .header-icon-btn::part(base) {
+    height: auto;
+    padding: 0;
+    border-radius: 999px;
+}
+.main-page .main-header .header-icon-btn wa-icon {
+    font-size: 1.5rem;
+    color: #666;
+}
+.main-page .main-header  wa-divider {
+    margin: 0 5px 0 12px;
+    --color: var(--gem-darker-sand-border);
+}
+.main-page .main-header wa-dropdown wa-button::part(base) {
+    height: 32px;
+    padding: 5px;
+    font-weight: 500;
+    color: #423D36;
+}
+.main-page .main-header wa-dropdown wa-button::part(caret) {
+    font-size: 0.7em;
+}
+.main-page .main-header wa-dropdown-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.85rem 1.25rem;
+}

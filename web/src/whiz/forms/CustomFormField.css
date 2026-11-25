@@ -1,0 +1,29 @@
+.custom-form-field {
+  display: flex;
+  flex-direction: column;
+}
+.custom-form-field > .entity-field-label {
+    margin-bottom: 0.5em;
+}
+.custom-form-field .field-required-indicator::after {
+  content: var(--wa-form-control-required-content);
+  color: var(--wa-form-control-required-content-color);
+  margin-inline-start: -1px; /* var(--wa-form-control-required-content-offset); */ /* spaing looks larger than the other Webawesome fields  */
+}
+.custom-form-field .field-container {
+    border: var(--wa-form-control-border-width) var(--wa-form-control-border-style) var(--wa-form-control-border-color);
+    border-radius: var(--wa-form-control-border-radius);
+    background-color: var(--wa-form-control-background-color);
+    padding: 14.4px; /* match the WA form fields left/right padding*/
+
+    &:focus-visible {
+      outline: var(--wa-focus-ring);
+      outline-offset: var(--wa-focus-ring-offset);
+    }
+}
+.custom-form-field .field-hint {
+  margin-top: 0.5em;
+  color: var(--wa-form-control-hint-color);
+  font-size: var(--wa-font-size-smaller);
+  line-height: var(--wa-form-control-hint-line-height);
+}

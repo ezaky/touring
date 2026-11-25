@@ -1,0 +1,19 @@
+whiz-dialog {
+    display: flex;
+    flex-direction: column;
+}
+whiz-dialog wa-scroller {
+    flex-grow: 1;
+}
+whiz-dialog .dialog-footer {
+    text-align: right;
+    margin-top: var(--wa-space-l);
+}
+whiz-dialog wa-dialog::part(body) {
+    /* overrid the 1.15rem */
+    padding-top: 0.7rem;
+}
+whiz-dialog wa-dialog .dialog-content {
+    /* for the progress to show in whole */
+    min-height: 50px;
+}

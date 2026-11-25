@@ -1,0 +1,11 @@
+dist/
+node_modules/
+web/src/generated/
+
+# misc
+.DS_Store
+
+npm-debug.log*
+tsconfig.tsbuildinfo
+.npmrc
+.env

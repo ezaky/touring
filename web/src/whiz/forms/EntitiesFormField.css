@@ -1,0 +1,38 @@
+.entities-form-field whiz-entity-details-list {
+    display: block;
+    padding-bottom: var(--wa-space-s);
+    margin-bottom: var(--wa-space-2xs);
+    border-bottom: 1px dashed var(--wa-color-border-normal);
+}
+.entities-form-field wa-button.add-entity-btn::part(base) {
+    font-size: 0.85em;
+    padding: 2px;
+}
+.entities-form-field whiz-commands {
+    display: inline-flex; 
+    margin-top: var(--wa-space-xs);
+    padding: var(--wa-space-3xs);
+    border: 1px dashed var(--wa-color-border-quiet);
+    border-radius: 8px;
+}
+.entities-form-field whiz-commands wa-icon {
+    color: var(--workspace-icon-color);
+    font-size: 0.9em;
+}
+.entities-form-field.has-sorting .entity-fields-list {
+    /* to align with the sort icon */
+    margin-left: 8px;
+}
+.entities-form-field .empty-entities {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+.entities-form-field .drag-handle {
+    padding: 2px;
+    font-size: 0.9em;
+    cursor: grab;
+    color: var(--wa-color-neutral-50);
+}
+.entities-form-field  .drag-ghost-invisible {
+  visibility: hidden;
+}

@@ -1,0 +1,35 @@
+
+whiz-entity-details-list .entity-details-list wa-details[open]::part(header) {
+    color: var(--wa-color-neutral-40);
+    font-weight: bold;
+}
+whiz-entity-details-list .entity-details-list wa-details::part(content) {
+    padding: var(--wa-space-2xs) 0 0 0;
+}
+whiz-entity-details-list .whiz-entity-details .entity-fields-list {
+    display: grid;
+    /* Column 1: Label (minimized) | Column 2: Value (flexible) */
+    grid-template-columns: max-content 1fr;
+    column-gap: var(--wa-space-xs);
+    row-gap: var(--wa-space-3xs);
+    align-items: baseline;
+}
+whiz-entity-details-list  .entity-details-list-item-summary {
+    /* so it renderers in one line if there is an icon */
+    display: flex;
+    align-items: center;
+    gap: var(--wa-space-2xs)
+}
+whiz-entity-details-list .whiz-entity-details .entity-fields-list .entity-field {
+    /* This makes the div "invisible" to the layout engine */
+    display: contents !important;
+}
+whiz-entity-details-list .whiz-entity-details .entity-fields-list .entity-field-label {
+    grid-column: 1;
+    text-transform: none;
+    letter-spacing: normal;
+}
+whiz-entity-details-list .whiz-entity-details .entity-fields-list .entity-field-value {
+    grid-column: 2;
+    font-size: 0.8rem !important;
+}

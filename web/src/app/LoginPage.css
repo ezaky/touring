@@ -1,0 +1,24 @@
+login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 120px auto;
+}
+login-page .logo-icon {
+    font-size: 46px;
+    margin-bottom: var(--wa-space-xs);
+    color: var(--wa-color-neutral-40);
+}
+login-page .login-title {
+    margin-bottom: var(--wa-space-m);
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #423D36;
+}
+login-page whiz-dialog {
+    width: 100%;
+}
+login-page whiz-dialog wa-button {
+    width: 100%;
+}

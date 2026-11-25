@@ -1,0 +1,256 @@
+:root {
+    --gem-hover-background: #E6DFD3;
+    --gem-white-hover-background: #F9F7F2;
+
+    /* Subtle/Quiet States (Lighter tints for backgrounds/ghost buttons) */
+    --wa-color-brand-90: #EED0C5; /* F7E7E1; */
+    --wa-color-brand-80: #BDA798;
+
+     /* A deep desert stone color */
+    --wa-color-brand-70: #8C7E6A;
+
+    /* Focus color */
+    --wa-color-brand-60: #B35A3D;; /* or #786856  */
+
+    /* Core Brand Color (Burnt Ochre) */
+    --wa-color-brand-50: #D46F4D; 
+
+    /* Hover/Active States (Slightly darker) */
+    --wa-color-brand-40: #B35A3D;
+    --wa-color-brand-30: #914831;
+    --wa-color-brand-20: #914831;
+    --wa-color-brand-10: #914831;
+    --wa-color-brand-05: #91314b;
+
+    --wa-color-surface-default: #F9F7F2; /* #F9F7F2 Sand Vapor, #F2EFE9 Soft Dunes, #EAE5DA (Warm Sand), #E6DFD3 (Desert Dust)*/
+    --wa-color-surface-raised: #FFFFFF;  /* white for panels/rows */
+
+    --wa-form-control-background-color: #FFFFFF;
+
+    --wa-color-fill-quiet: var(--gem-hover-background);
+    --wa-color-neutral-fill-quiet: var(--gem-hover-background);
+    
+    --wa-tooltip-background-color: #786856; /* #867460;*/
+    --wa-tooltip-content-color: white;
+
+    --gem-brand-color: var(--wa-color-brand-50);
+    --gem-sand-border: #EAE6D8; /* Slightly darker than body background */
+    --gem-darker-sand-border: #E6DFD3;
+    --gem-dark-sand-border: var(--wa-color-brand-90);
+    --gem-warm-shadow: 0 4px 12px rgba(84, 73, 55, 0.06);
+
+    --gem-focus-extra: 5px;
+    --gem-darker-text: #333537;
+
+}
+/* added because it was the only way I found to prevent a few-pixels-off vertical scrollbar */
+/* 
+body {
+    overflow: hidden;
+}
+*/
+gem-app {
+    /* for the progress spinner to show properly */
+    display: block;
+    min-height: 50px;
+}
+wa-toast {
+    width: 35rem;
+}
+wa-tooltip::part(body) {
+  font-size: 0.85rem;
+  user-select: text;
+  -webkit-user-select: text;
+}
+wa-tooltip.large::part(body) {
+  --max-width: 32rem;
+  padding: 15px;
+}
+wa-details::part(header) {
+    padding: 0;
+}
+ul.gem-ul-compact,
+ol.gem-ol-compact {
+    margin-bottom: 5px;
+}
+wa-button.btn-s::part(base) {
+    font-size: 0.85rem;
+}
+wa-button.btn-xs::part(base) {
+    padding: 0 8px;
+    height: 30px;
+    font-size: 0.85rem;
+}
+wa-button.btn-xs-plain::part(base) {
+    padding: 0 5px;
+    height: 25px;
+    font-size: 0.85rem;
+}
+wa-dropdown-item:hover {
+  background-color: #F2EFE9;
+  color: #78350F;
+}
+.wa-flank.wa-align-items-start > wa-icon:first-child {
+    position: relative;
+    top: 5px;
+}
+wa-select wa-icon.label-icon {
+    margin: 0;
+    padding-right: 5px;
+    width: 15px;
+    margin-right: 2px;
+}
+.gem-medium-page {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.gem-muted-text {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+.gem-loud-text {
+    font-weight: 600;
+    color: #333;
+}
+.gem-secondary-text {
+    font-size: 0.9em;
+}
+.gem-truncated-text {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.gem-tooltip-link {
+    text-decoration: underline dotted;
+    text-underline-offset: 4px; 
+    text-decoration-color: #888; 
+    cursor: pointer;
+}
+.gem-info-icon {
+    color: #00A896;
+}
+.gem-warning-icon {
+    color: #E69F00;
+}
+.gem-larger-icon {
+    font-size: 1.2em;
+}
+
+.entity-field-label,
+whiz-dialog .entity-form-field::part(form-control-label)  {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: bold;
+    color: var(--wa-color-neutral-30);
+}
+whiz-dialog .entity-form-field,
+whiz-dialog .entity-form-field ::part(base),
+whiz-dialog .dialog-footer wa-button::part(base) {
+    font-size: 0.9rem;
+}
+whiz-dialog .entity-field-label,
+whiz-dialog .entity-form-field::part(form-control-label)  {
+    margin-bottom: 0.6em;
+}
+.whiz-entity-details dl.entity-fields-list {
+    /* wa native hass margin bottom for dl */
+    margin-bottom: 0;
+}
+.whiz-entity-details .entity-fields-list .entity-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wa-space-3xs);
+}
+.sub-field-label {
+    font-weight: 600;
+    color: var(--wa-color-neutral-40);
+}
+whiz-dialog  {
+    --wa-form-control-border-color: var(--wa-color-border-normal);
+}
+whiz-dialog .dialog-content {
+    overflow-y: auto;
+    /* padding otherwise the focus border is clipped */
+    padding: var(--gem-focus-extra);
+}
+whiz-dialog .hide-form-field-label::part(form-control-label) {
+    display: block; /* so the height takes effect */
+    visibility: hidden;
+    height: var(--gem-focus-extra);
+}
+whiz-dialog .entity-form-field {
+    margin-bottom: 1.2em;
+}
+whiz-dialog wa-textarea[resize='auto']::part(textarea) {
+    max-height: calc(5lh + 13px);
+    overflow-y: auto;
+}
+whiz-dialog ::part(hint) {
+    /* should be left aligned even if the form is centered */
+    text-align: left;
+}
+
+whiz-commands wa-dropdown::part(menu) {
+    font-size: 0.9em;
+}
+whiz-commands wa-dropdown-item:not(:hover) wa-icon {
+    color: var(--wa-color-neutral);
+}
+
+.gem-page {
+    --color-primary: var(--wa-color-brand-50);
+    --color-text-main: #1C1917;
+    --color-text-muted: #57534E;
+    --color-text-light: #78716C;
+
+    --color-border: #E7E2D8;
+    --color-border-strong: #D6CEC1;
+
+    --container-max-width: 1000px;
+    --radius-btn: 6px;
+    --radius-card: 8px;
+
+    display: block;
+}
+.gem-page .container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.gem-page .gem-section {
+  padding: 60px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gem-page .gem-section .section-content {
+    max-width: 450px;
+    margin: 0 auto var(--wa-space-l) auto;
+}
+.gem-page .gem-section whiz-dialog.section-content {
+    min-width: 400px;
+}
+.gem-page .page-header,
+.gem-page .section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.gem-page .page-title,
+.gem-page .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-text-main);
+  letter-spacing: -0.01em;
+  margin: 0 0 12px 0;
+}
+
+.gem-page .page-subtitle,
+.gem-page .section-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}

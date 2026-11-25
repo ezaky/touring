@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="fr" source-language="en" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="scb04435672ac5410">
+  <source>Log in</source>
+  <target>Connexion</target>
+</trans-unit>
+<trans-unit id="s5e6b698a2ec87331">
+  <source>Sign up</source>
+  <target>Inscription</target>
+</trans-unit>
+<trans-unit id="sb1f3f396eaa26f61">
+  <source>Hello Performer</source>
+  <target>Bonjour artiste</target>
+</trans-unit>
+<trans-unit id="s344bc5a2f15a2439">
+  <source>For touring performers</source>
+  <target>Pour les artistes en tournée</target>
+</trans-unit>
+<trans-unit id="scb36fd3b6913d1c5">
+  <source>Tell fans when you’re coming to town.</source>
+  <target>Prévenez votre public quand vous passez en ville.</target>
+</trans-unit>
+<trans-unit id="s66a7fc16c669dec1">
+  <source>Post your tour cities and dates in seconds. Fans pick their town and get an email the moment you're nearby.</source>
+  <target>Publiez vos villes et dates de tournée en quelques secondes. Votre public choisit sa ville et reçoit un e-mail dès que vous passez dans le coin.</target>
+</trans-unit>
+<trans-unit id="s91035b25d090fd93">
+  <source>Performer Sign Up</source>
+  <target>Inscription artiste</target>
+</trans-unit>
+<trans-unit id="s1794d42c2d8b28f6">
+  <source>Free to use • No social algorithm</source>
+  <target>Gratuit • Sans algorithme social</target>
+</trans-unit>
+<trans-unit id="s86dd5f93c6591510">
+  <source>How It Works</source>
+  <target>Comment ça marche</target>
+</trans-unit>
+<trans-unit id="sbda2f59a325f5bf2">
+  <source>Add your stops</source>
+  <target>Ajoutez vos étapes</target>
+</trans-unit>
+<trans-unit id="s5ca566150bf6fd0b">
+  <source>Add your stops — Enter the cities and date ranges you’re performing.</source>
+  <target>Ajoutez vos étapes — Indiquez les villes et les dates de vos représentations.</target>
+</trans-unit>
+<trans-unit id="s2394acd082c92964">
+  <source>Share one link</source>
+  <target>Partagez un seul lien</target>
+</trans-unit>
+<trans-unit id="sfefe4ac9a98e3f41">
+  <source>Put your tour link in your bio, newsletter, or stage banter.</source>
+  <target>Glissez le lien de votre tournée dans votre bio, votre newsletter ou entre deux vannes sur scène.</target>
+</trans-unit>
+<trans-unit id="s9fae2c59bb693729">
+  <source>Fans get notified</source>
+  <target>Le public est alerté</target>
+</trans-unit>
+<trans-unit id="s124c5f502f646cea">
+  <source>Subscribers pick their town and receive an automatic email when you schedule a stop there.</source>
+  <target>Les abonnés choisissent leur ville et reçoivent un e-mail automatique dès que vous y programmez une date.</target>
+</trans-unit>
+<trans-unit id="s30c26ef5c375aab1">
+  <source>All rights reserved.</source>
+  <target>Tous droits réservés.</target>
+</trans-unit>
+<trans-unit id="s4ec543d75d7a490f">
+  <source>There is already a performer with this email. Use the login link if you already have an account.</source>
+  <target>Un compte artiste existe déjà avec cette adresse e-mail. Utilisez le lien de connexion si vous avez déjà un compte.</target>
+</trans-unit>
+<trans-unit id="s1561fb398a265a23">
+  <source>Your account has been created successfully. Welcome to Pepits Touring!</source>
+  <target>Votre compte a bien été créé. Bienvenue sur Pepits Touring !</target>
+</trans-unit>
+<trans-unit id="s8ba6965a14728c0f">
+  <source>Must be at least <x id="0" equiv-text="${MinPasswordLength}"/> characters</source>
+  <target>Doit contenir au moins <x id="0" equiv-text="${MinPasswordLength}"/> caractères</target>
+</trans-unit>
+<trans-unit id="s7c8aa6cecf00404d">
+  <source>Password and Confirm Password should be the same</source>
+  <target>Le mot de passe et sa confirmation doivent être identiques</target>
+</trans-unit>
+<trans-unit id="sef49aec68fd1dc66">
+  <source>Name</source>
+  <target>Nom</target>
+</trans-unit>
+<trans-unit id="sd1f44f1a8bc20e67">
+  <source>Email</source>
+  <target>E-mail</target>
+</trans-unit>
+<trans-unit id="sf6e1665c7022a1f8">
+  <source>Password</source>
+  <target>Mot de passe</target>
+</trans-unit>
+<trans-unit id="s9ccfc25b4c8a5811">
+  <source>At least <x id="0" equiv-text="${MinPasswordLength}"/> charactrers</source>
+  <target>Au moins <x id="0" equiv-text="${MinPasswordLength}"/> caractères</target>
+</trans-unit>
+<trans-unit id="s3dab6bcbc22dc3e0">
+  <source>Confirm Password</source>
+  <target>Confirmer le mot de passe</target>
+</trans-unit>
+<trans-unit id="s6a53f41acb398527">
+  <source>Free to use. Full access to all features.</source>
+  <target>Gratuit. Accès complet à toutes les fonctionnalités.</target>
+</trans-unit>
+<trans-unit id="s321c03399a143242">
+  <source>Create Account</source>
+  <target>Créer un compte</target>
+</trans-unit>
+<trans-unit id="s205b3e04ad286caa">
+  <source>Already have an account?</source>
+  <target>Vous avez déjà un compte ?</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
