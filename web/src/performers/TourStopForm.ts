@@ -5,7 +5,6 @@ import { EntityField } from "shared/whiz/entities/EntityField";
 import { msg, str } from '@lit/localize';
 import { Entity } from "shared/whiz/entities/QueryDefs";
 import { DialogSubmitSpec } from "../whiz/components/DialogDefs";
-import StringUtil from "shared/whiz/util/StringUtil";
 import DateUtil from "../whiz/util/DateUtil";
 
 const TourStopEntityType = "touring.tourStop";

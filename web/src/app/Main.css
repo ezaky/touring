@@ -207,50 +207,54 @@ whiz-commands wa-dropdown-item:not(:hover) wa-icon {
     --color-border: #E7E2D8;
     --color-border-strong: #D6CEC1;
 
-    --container-max-width: 1000px;
+    --container-max-width: 760px;
     --radius-btn: 6px;
     --radius-card: 8px;
 
     display: block;
 }
-.gem-page .container {
+.gem-page .gem-section {
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 25px;
     box-sizing: border-box;
+    margin-bottom: 25px;
 }
-.gem-page .gem-section {
-  padding: 60px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.gem-page .gem-section .section-content {
-    max-width: 450px;
-    margin: 0 auto var(--wa-space-l) auto;
-}
-.gem-page .gem-section whiz-dialog.section-content {
+.gem-page .gem-section whiz-dialog {
     min-width: 400px;
+    max-width: 450px;
+    margin: 0 auto;
 }
-.gem-page .page-header,
-.gem-page .section-header {
+.gem-page .page-header {
   text-align: center;
-  margin-bottom: 2rem;
+}
+.gem-page .page-header {
+  margin-bottom: 1.5rem;
+}
+.gem-page .section-header {
+  margin-bottom: 1rem;
 }
 .gem-page .page-title,
 .gem-page .section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.25;
   color: var(--color-text-main);
   letter-spacing: -0.01em;
-  margin: 0 0 12px 0;
+  margin: 0; /* for <h> tags */
 }
-
+.gem-page .page-title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.gem-page .section-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
 .gem-page .page-subtitle,
 .gem-page .section-subtitle {
   font-size: 1.1rem;
-  line-height: 1.5;
   color: var(--color-text-muted);
   margin-bottom: 1.5rem;
+}
+.gem-page .page-title + .page-subtitle,
+.gem-page .section-title + .section-subtitle {
+    padding-top: var(--wa-space-xs);
 }

@@ -18,9 +18,11 @@ const Plugin:WhizPlugin = {
                 {name: "email"},
                 {name: "password"},
                 {name: "bio"},
-                {name: "imageFilename"},
+                {name: "image_bucket_file_name"},
                 {name: "fans_email_content"},
-                {name: "slug"}
+                {name: "slug"},
+
+                {name: "$image_url"}
             ]
         },
         <EntityTypeExtension> {

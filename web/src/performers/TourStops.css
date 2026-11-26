@@ -1,0 +1,50 @@
+tour-stops .tour-dates-section .section-header {
+    display: flex;
+    align-items: baseline;
+}
+tour-stops .tour-dates-section .section-header wa-button::part(base) {
+  /* so the section header height is not too big */
+  height: 30px;
+}
+tour-stops section.tour-dates-section .section-title {
+    flex-grow: 1;
+}
+tour-stops .tour-stop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+tour-stops .tour-stop:first-child {
+  padding-top: 0;
+}
+tour-stops .tour-stop:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+tour-stops .tour-info {
+  min-width: 0; /* Allows long city names to wrap cleanly without pushing buttons off-screen */
+}
+tour-stops .tour-city {
+  font-weight: 600;
+  line-height: 1.3;
+}
+tour-stops .tour-dates {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2px;
+}
+tour-stops .tour-actions {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0; /* Keeps Edit/Delete buttons from shrinking on narrow screens */
+}
+tour-stops .tour-actions wa-button::part(base) {
+    width: auto;
+    padding: 0;
+    height: 25px;
+    font-size: 0.85rem;
+    aspect-ratio: 0;
+}

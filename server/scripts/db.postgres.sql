@@ -13,7 +13,7 @@ CREATE TABLE performers (
   email VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL,
   bio TEXT,
-  imageFilename VARCHAR(255),
+  image_bucket_file_name VARCHAR(255),
   fans_email_content TEXT,
   slug VARCHAR(255) NOT NULL, -- the performer url path
   created_at TIMESTAMP DEFAULT (NOW() AT TIME ZONE 'UTC'),

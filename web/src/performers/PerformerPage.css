@@ -1,51 +1,5 @@
-.performer-page section {
+performer-page section {
     background-color: white;
-    border: 1px solid var(--gem-sand-border)
-}
-.gem-page .section-header {
-    text-align: left;
-}
-.performer-page .section-title {
-    font-size: 1.6rem
-}
-.performer-page section.tour-dates-section .section-header {
-    display: flex;
-}
-.performer-page section.tour-dates-section .section-title {
-    flex-grow: 1;
-}
-.performer-page .tour-stop {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 14px 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-.performer-page .tour-stop:last-child {
-  border-bottom: none;
-}
-.performer-page .tour-info {
-  min-width: 0; /* Allows long city names to wrap cleanly without pushing buttons off-screen */
-}
-.performer-page .tour-city {
-  font-weight: 600;
-  line-height: 1.3;
-}
-.performer-page .tour-dates {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 2px;
-}
-.performer-page .tour-actions {
-  display: flex;
-  gap: 5px;
-  flex-shrink: 0; /* Keeps Edit/Delete buttons from shrinking on narrow screens */
-}
-.performer-page .tour-actions wa-button::part(base) {
-    width: auto;
-    padding: 0;
-    height: 25px;
-    font-size: 0.85rem;
-    aspect-ratio: 0;
+    border: 1px solid var(--gem-sand-border);
+    box-shadow: var(--gem-warm-shadow);
 }

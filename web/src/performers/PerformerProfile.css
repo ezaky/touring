@@ -1,0 +1,55 @@
+performer-profile .gem-section {
+    background-color: white;
+    border: 1px solid var(--gem-sand-border);
+    box-shadow: var(--gem-warm-shadow);
+}
+performer-profile .profile-content {
+  display: flex;
+  width: 100%;
+  gap: var(--wa-space-m);
+}
+performer-profile .profile-content .image-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wa-space-s);
+  flex: 0 0 40%;
+  max-width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+performer-profile .profile-content .image-container img {
+  cursor: pointer;
+}
+/*
+performer-profile .profile-content .image-container {
+  display: flex;
+  justify-content: center;
+  max-height: 320px;
+  overflow: hidden;
+}
+performer-profile .profile-content .image-container img {
+    display: block;
+    max-width: 100%;
+    max-height: 320px;
+    width: auto;
+    height: auto;
+}
+*/
+performer-profile .image-container .profile-image-actions {
+  display: flex;
+}
+performer-profile .profile-content .image-container,
+performer-profile .profile-content .bio-text-container {
+  border: 1px dashed var(--gem-darker-sand-border);
+  border-radius: 4px;
+}
+performer-profile .profile-content .image-container wa-button.add-image-btn {
+  width: 100%;
+}
+performer-profile .profile-content .bio-text-container {
+  flex: 1;
+  min-width: 0;
+}
+performer-profile .profile-content .bio-text-container textarea {
+  border: none;
+}

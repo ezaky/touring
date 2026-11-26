@@ -72,16 +72,14 @@ export default class NewPerformerPage extends BaseComponent {
         }
         renderLit(html`
             <main class="gem-section">
-                <div class="container">
-                    <header class="page-header">
-                        <h1 class="page-title">${title}</h1>
-                        <p class="page-subtitle">${subTitle}</p>
-                    </header>
-                    <whiz-dialog class="section-content" .props=${dialogProps}></whiz-dialog>
-                    <p class="gem-muted-text" style="text-align: center">
-                        ${msg("Already have an account?")} <a href="#" @click=${this._onLoginClick}>${msg("Log in")}</a>
-                    </p>
-                </div>
+                <header class="page-header">
+                    <h1 class="page-title">${title}</h1>
+                    <p class="page-subtitle">${subTitle}</p>
+                </header>
+                <whiz-dialog .props=${dialogProps}></whiz-dialog>
+                <p class="gem-muted-text" style="text-align: center; padding-top: var(--wa-space-l)">
+                    ${msg("Already have an account?")} <a href="#" @click=${this._onLoginClick}>${msg("Log in")}</a>
+                </p>
             </main>
 
         `, this);
